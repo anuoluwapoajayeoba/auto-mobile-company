@@ -1,0 +1,381 @@
+<link href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+<link rel="stylesheet" href="../css/main.css">
+<script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
+<script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.0/js/bootstrap.min.js"></script>
+
+<!------ Include the above in your HEAD tag ---------->
+
+<div id="throbber" style="display:none; min-height:120px;"></div>
+<div id="noty-holder"></div>
+<div id="wrapper">
+    <!-- Navigation -->
+    <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="index.html">
+                <img src="http://placehold.it/200x50&text=HOME" alt="LOGO">
+            </a>
+        </div>
+        <!-- Top Menu Items -->
+        <ul class="nav navbar-right top-nav">
+            <li><a href="#" data-placement="bottom" data-toggle="tooltip" href="#" data-original-title="Stats"><i class="fa fa-bar-chart-o"></i>
+                </a>
+            </li>            
+            <li class="dropdown">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown">Admin <b class="fa fa-angle-down"></b></a>
+                <ul class="dropdown-menu">
+                    <li><a href="#" data-toggle="modal" data-target="#exampleModal"><i class="fa fa-fw fa-user"></i> Edit Profile</a></li>
+                    <li><a href="#" data-toggle="modal" data-target="#passwordModal"><i class="fa fa-fw fa-cog"></i> Change Password</a></li>
+                    <li class="divider"></li>
+                    <li><a href="#"><i class="fa fa-fw fa-power-off"></i> Logout</a></li>
+                </ul>
+            </li>
+        </ul>
+        <!-- Sidebar Menu Items - These collapse to the responsive navigation menu on small screens -->
+        <div class="collapse navbar-collapse navbar-ex1-collapse">
+            <ul class="nav navbar-nav side-nav">
+                <li>
+                    <a href="#" data-toggle="collapse" data-target="#submenu-1"><i class="fa fa-fw fa-search"></i> Edit Profile<i class="fa fa-fw fa-angle-down pull-right"></i></a>
+                    <ul id="submenu-1" class="collapse">
+                        <li><a href="#"><i class="fa fa-user"></i> View Cars</a></li>
+                        <li><a href="#"><i class="fa fa-envelope"></i> Post Cars</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="faq"><i class="fa fa-fw fa fa-question-circle"></i> Users</a>
+                </li>
+            </ul>
+        </div>
+        <!-- /.navbar-collapse -->
+    </nav>
+
+    <div id="page-wrapper">
+        <div class="container-fluid">
+            <!-- Page Heading -->
+            <div class="row" id="main" >
+                <div class="col-sm-12 col-md-12 well" id="content">
+                    <h1>Welcome Anuoluwapo!</h1>
+                </div>
+                <!-- Post cars -->
+                <div class="table-div">
+                    <table class="table">
+                        <thead class="table-header">
+                            <tr>
+                                <td>S/N</td>
+                                <td>Brand</td>
+                                <td>Images</td>
+                                <td>Price</td>
+                                <td>Current Price</td>
+                                <td>View</td>
+                            </tr>
+                        </thead>
+                        <tbody class="table-body">
+                            <tr>
+                                <td>1</td>
+                                <td>Toyota</td>
+                                <td width="20%"><img src="image/car1.jpg" alt="" width="30%"></td>
+                                <td>#50000000</td>
+                                <td>#49000000</td>
+                                <td><button type="button" class="btn btn-warning btn-sm btn-flat"><a href="#" data-toggle="modal" data-target="#viewModal"><i class="fa fa-eye"></i>View</a></button><button class="btn btn-success btn-sm btn-flat" style="margin-left: 5px; margin-right: 5px;"><a href="#" data-toggle="modal" data-target="#editModal"><i class="fa fa-pencil-square-o"></i>Edit</a></button><button type="button" class="btn btn-danger btn-sm btn-flat"><i class="fa fa-trash"></i>Delete</button></td>
+                            </tr>
+                            <tr>
+                                <td>2</td>
+                                <td>Toyota</td>
+                                <td width="20%"><img src="image/car1.jpg" alt="" width="30%"></td>
+                                <td>#0000000</td>
+                                <td>#29000000</td>
+                                <td><button type="button" class="btn btn-warning btn-sm btn-flat"><a href="#" data-toggle="modal" data-target="#editModal"><i class="fa fa-eye"></i>View</a>
+                                </button><button class="btn btn-success btn-sm btn-flat" style="margin-left: 5px; margin-right: 5px;"><a href="#" data-toggle="modal" data-target="#viewModal"><i class="fa fa-pencil-square-o"></i>Edit</a></button><button type="button" class="btn btn-danger btn-sm btn-flat"><i class="fa fa-trash"></i>Delete</button></td>
+                            </tr>
+                            <tr>
+                                <td>3</td>
+                                <td>Toyota</td>
+                                <td width="20%"><img src="image/car1.jpg" alt="" width="30%"></td>
+                                <td>#20000000</td>
+                                <td>#19000000</td>
+                                <td><button type="button" class="btn btn-warning btn-sm btn-flat"><a href="#" data-toggle="modal" data-target="#viewModal"><i class="fa fa-eye"></i>View</a>
+                                </button><button class="btn btn-success btn-sm btn-flat" style="margin-left: 5px; margin-right: 5px;"><a href="#" data-toggle="modal" data-target="#editModal"><i class="fa fa-pencil-square-o"></i>Edit</a></button><button type="button" class="btn btn-danger btn-sm btn-flat"><i class="fa fa-trash"></i>Delete</button></td>
+                            </tr>
+                            <tr>
+                                <td>4</td>
+                                <td>Toyota</td>
+                                <td width="20%"><img src="image/car1.jpg" alt="" width="30%"></td>
+                                <td>#70000000</td>
+                                <td>#69000000</td>
+                                <td><button type="button" class="btn btn-warning btn-sm btn-flat"><a href="#" data-toggle="modal" data-target="#viewModal"><i class="fa fa-eye"></i>View</a></button><button class="btn btn-success btn-sm btn-flat" style="margin-left: 5px; margin-right: 5px;"><a href="#" data-toggle="modal" data-target="#editModal"><i class="fa fa-pencil-square-o"></i>Edit</a>
+                                </button><button type="button" class="btn btn-danger btn-sm btn-flat"><i class="fa fa-trash"></i>Delete</button></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <!-- Users page -->
+                <div class="table-div">
+                    <table class="table">
+                        <thead class="table-header">
+                            <tr>
+                                <td>S/N</td>
+                                <td>Full Name</td>
+                                <td>Phone Number</td>
+                                <td>Email</td>
+                                <td>View</td>
+                            </tr>
+                        </thead>
+                        <tbody class="table-body">
+                            <tr>
+                                <td>1</td>
+                                <td>Anuoluwapo Samuel</td>
+                                <td>0802222222</td>
+                                <td>samtex@yahoo.com</td>
+                                <td><button type="button" class="btn btn-warning btn-sm btn-flat" style="margin-left: 5px; margin-right: 5px;"><a href="#" data-toggle="modal" data-target="#viewModal"><i class="fa fa-eye"></i>View</a></button><button type="button" class="btn btn-danger btn-sm btn-flat"><i class="fa fa-trash"></i>Delete</button></td>
+                            </tr>
+                            <tr>
+                                <td>2</td>
+                                <td>Temilade Daniel</td>
+                                <td>0802222222</td>
+                                <td>temsdan@yahoo.com</td>
+                                <td><button type="button" class="btn btn-warning btn-sm btn-flat" style="margin-left: 5px; margin-right: 5px;"><a href="#" data-toggle="modal" data-target="#viewModal"><i class="fa fa-eye"></i>View</a></button><button type="button" class="btn btn-danger btn-sm btn-flat"><i class="fa fa-trash"></i>Delete</button></td>
+                            </tr>
+                            <tr>
+                                <td>3</td>
+                                <td>Sunday Igboho</td>
+                                <td>08024626722</td>
+                                <td>sunday@yahoo.com</td>
+                                <td><button type="button" class="btn btn-warning btn-sm btn-flat" style="margin-left: 5px; margin-right: 5px;"><a href="#" data-toggle="modal" data-target="#viewModal"><i class="fa fa-eye"></i>View</a></button><button type="button" class="btn btn-danger btn-sm btn-flat"><i class="fa fa-trash"></i>Delete</button></td>
+                            </tr>
+                            <tr>
+                                <td>4</td>
+                                <td>Wole Soyinka</td>
+                                <td>081342782212</td>
+                                <td>soyinka@gmail.com</td>
+                                <td><button type="button" class="btn btn-warning btn-sm btn-flat" style="margin-left: 5px; margin-right: 5px;"><a href="#" data-toggle="modal" data-target="#viewModal"><i class="fa fa-eye"></i>View</a></button><button type="button" class="btn btn-danger btn-sm btn-flat"><i class="fa fa-trash"></i>Delete</button></td>
+                            </tr>
+                            <tr>
+                                <td>5</td>
+                                <td>Chinua Achebe</td>
+                                <td>07067282562</td>
+                                <td>samtex@yahoo.com</td>
+                                <td><button type="button" class="btn btn-warning btn-sm btn-flat" style="margin-left: 5px; margin-right: 5px;"><a href="#" data-toggle="modal" data-target="#viewModal"><i class="fa fa-eye"></i>View</a></button><button type="button" class="btn btn-danger btn-sm btn-flat"><i class="fa fa-trash"></i>Delete</button></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+                    <!-- Post cars -->
+                    <div class="" id="profile-email">
+                        <h4>Post Card</h4>
+                    <form action="" class="">
+                        <div class="form-group">
+                            <input type="text" class="form-control" placeholder="Brand">
+                        </div>
+                        <div class="form-group">
+                            <input type="text" class="form-control" placeholder="Car Condition">
+                        </div>
+                        <div class="form-group">
+                            <input type="number" class="form-control" placeholder="Price">
+                        </div>
+                        <div class="form-group">
+                            <input type="number" class="form-control" placeholder="Current Price">
+                        </div>
+                        <div class="form-group">
+                            <input type="file" class="form-control">
+                        </div>
+                        <div class="form-group">
+                            <input type="button" value="Change Password" class="btn btn-sm btn-success">
+                        </div>
+
+                    </form>
+                    </div>
+            <!-- /.row -->
+            <!-- Email -->
+            <div class="form-div col-md-3 col-sm-3 col-lg-4 well offset-md-3 offset-sm-3 offset-lg-4" id="profile-email">
+                <h4>Edit Email</h4>
+                <form action="">
+                    <div class="form-group">
+                        <input type="text" class="form-control" placeholder="Email">
+                    </div>
+                    <div class="form-group">
+                        <input type="button" value="Edit Email" class="btn btn-sm btn-success">
+                    </div>
+                </form>
+            </div>
+            <!-- phone number -->
+            <div class="form-div col-md-3 col-sm-3 col-lg-4 well offset-md-3 offset-sm-3 offset-lg-4" id="profile-email">
+                <h4>Edit Phone Number</h4>
+                <form action="">
+                    <div class="form-group">
+                        <input type="text" class="form-control" placeholder="Phone Number">
+                    </div>
+                    <div class="form-group">
+                        <input type="button" value="Phone Number" class="btn btn-sm btn-success">
+                    </div>
+                </form>
+            </div>
+            <!-- change password -->
+            <div class="form-div col-md-3 col-sm-3 col-lg-4 well offset-md-3 offset-sm-3 offset-lg-4" id="profile-email">
+                <h4>Change Password</h4>
+                <form action="">
+                    <div class="form-group">
+                        <input type="password" class="form-control" placeholder="Create Password"><br>
+                        <input type="password" class="form-control" placeholder="New Password"><br>
+                        <input type="password" class="form-control" placeholder="Confirm Password">
+                    </div>
+                    <div class="form-group">
+                        <input type="button" value="Change Password" class="btn btn-sm btn-success">
+                        <a href="#" type="button" value="" class="btn btn-sm text-dark border ml-4">Cancel</a>
+                    </div>
+                </form>
+            </div>
+            <!-- change Image-->
+            <div class="form-div col-md-3 col-sm-3 col-lg-4 well offset-md-3 offset-sm-3 offset-lg-4" id="profile-email">
+                <h4>Change Profile Image</h4>
+                <div class="profile-image"><img src="image/anu.jpg" alt="">
+                <form action="">
+                    <div class="form-group mt-4">
+                        <input type="file"  class="form-control>
+                    </div>
+                    <div class="form-group">
+                        <input type="button" value="Change Image" class="btn btn-sm btn-success">
+                        <a href="#" type="button" value="" class="btn btn-sm text-dark border ml-4">Cancel</a>
+                    </div>
+                </form>
+            </div>
+        </div>
+        <!-- /.container-fluid -->
+    </div>
+    <!-- /#page-wrapper -->
+
+</div><!-- /#wrapper -->
+
+<!-- Button trigger modal -->
+  
+  <!-- Modal for full name-->
+  <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">Edit Full Name</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+            <form action="">
+                <div class="form-group">
+                    <input type="text" class="form-control" placeholder="Full Name">
+                </div>
+                <div class="form-group">
+                    <input type="button" value="Edit Name" class="btn btn-sm btn-success">
+                </div>
+            </form>
+        </div>
+
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+          <button type="button" class="btn btn-primary">Save changes</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Modal for change password-->
+  <div class="modal fade" id="passwordModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">Change password</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+            <form action="">
+                <div class="form-group"> 
+                    <input type="password" class="form-control" placeholder="Create Password"><br>
+                    <input type="password" class="form-control" placeholder="New Password"><br>
+                    <input type="password" class="form-control" placeholder="Confirm Password">
+                </div>
+                <div class="form-group">
+                    <input type="button" value="Change password" class="btn btn-sm btn-success">
+                </div>
+            </form>
+        </div>
+
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+          <button type="button" class="btn btn-primary">Save changes</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- modal for Edit -->
+  <div class="modal fade" id="editModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">Edit details</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+            <form action="">
+                <div class="form-group">
+                    <input type="text" class="form-control" placeholder="Brand"><br>
+                    <input type="" class="form-control" placeholder="Image"><br>
+                    <input type="number" class="form-control" placeholder="Price">
+                    <input type="number" class="form-control" placeholder="Current Price">
+                </div>
+            </form>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+          <button type="button" class="btn btn-primary">Save changes</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Modal for View -->
+  <div class="modal fade" id="viewModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">Details</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+            <ul class="list-group">
+                <li class="list-item"><strong>S/N</strong>1</li>
+                <li class="list-item"><strong>Brand</strong></li>
+                <li class="list-item"><strong>Image</strong></li>
+                <li class="list-item">Price: <strong>#39000000</strong></li>
+                <li class="list-item">Current Price: <strong>#39000000</strong></li>
+            </ul>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+          <button type="button" class="btn btn-primary">Save changes</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+<script>
+    $(function(){
+    $('[data-toggle="tooltip"]').tooltip();
+    $(".side-nav .collapse").on("hide.bs.collapse", function() {                   
+        $(this).prev().find(".fa").eq(1).removeClass("fa-angle-right").addClass("fa-angle-down");
+    });
+    $('.side-nav .collapse').on("show.bs.collapse", function() {                        
+        $(this).prev().find(".fa").eq(1).removeClass("fa-angle-down").addClass("fa-angle-right");        
+    });
+})    
+    
+</script>

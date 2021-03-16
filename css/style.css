@@ -1,0 +1,245 @@
+/* .logo{
+    margin-right: 60%;
+} */
+
+/* .logo img{
+     width: 13%; 
+} */
+body{
+    /* font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif; */
+}
+
+.carousel-item img{
+    height: 80vh;
+}
+
+.card img{
+    height: 25vh;
+}
+
+.navbar-nav li:nth-child(1):hover, .navbar-nav li:nth-child(2):hover, .navbar-nav li:nth-child(3):hover, .navbar-nav li:nth-child(4):hover, .navbar-nav li:nth-child(6):hover, .navbar-nav li:nth-child(7):hover{
+    background: blue;
+    border-radius: 10px;
+}
+
+.main-item img{
+    height: 60vh;
+}
+
+.advert-div-on img{
+    margin-left: 35%;
+}
+
+.advert-div-on p{
+    font-size: 25px;
+}
+
+.foooter-div-one ul li, .footer-div-two p{
+    list-style: none;
+    color: gray;
+    padding: 5px;
+    font-weight: bold;
+    font-size: 12px;
+}
+
+/* contact style starts */
+.header-contact-div h2, h3{
+    font-weight: bold;
+    padding: 10px;
+}
+
+.row-div-one input{
+    border: 1px solid gray;
+    padding: 5px;
+    width: 70%;
+}
+
+.row-div-one button{
+    width: 70%;
+    border: 2px solid gray;
+    border-radius: 10px;
+    background: blue;
+    font-size: 24px;
+    color: #fff;
+    padding: 5px;
+}
+
+.row-div-one button:hover{
+    background: #fff;
+    color: blue;
+}
+
+.main-div .main-div-one .address li{
+    list-style: none;
+    padding: 5px;
+    color: goldenrod;
+    font-size: 20px;
+}
+
+.main-div .main-div-one .social-media li{
+    display: inline-block;
+    list-style: none;
+    font-weight: bold;
+    padding: 10px;
+    font-size: 32px;
+}
+
+.main-div .main-div-one .social-media .fa-facebook{
+    font-size: 30px;
+    color: #3B5998;
+}
+
+.main-div .main-div-one .social-media .fa-instagram{
+    font-size: 30px;
+    color: #e95950;
+}
+
+.main-div .main-div-one .social-media .fa-twitter{
+    font-size: 30px;
+    color: #1da1f2;
+}
+
+.main-div .main-div-one .social-media .fa-google{
+    font-size: 30px;
+    color: #2c78e9;
+}
+
+.main-div .main-div-one .social-media .fa-whatsapp{
+    font-size: 30px;
+    color: #25d366;
+}
+
+.main-div .main-div-one .social-media li:hover{
+    padding: 15px;
+}
+
+.main-div-two .drivers li{
+    padding: 10px;
+}
+
+.main-div-two h4{
+    font-weight: bold;
+}
+
+.subscribe input{
+    border: 1px solid gray;
+    padding: 5px;
+}
+
+.subscribe button{
+    padding: 5px;
+    border: 1px solid gray;
+    background: blue;
+    color: #fff;
+}
+
+.subscribe button:hover{
+    background:#fff;
+    color:blue;
+}
+
+ footer .footer-div-one .footer-ul li{
+    list-style: none;
+    color: white;
+    padding: 5px;
+}
+
+footer .footer-div-two p{
+    color: #fff;
+    padding: 5px;
+}
+
+footer .foot-div-three input{
+    width: 200%;
+}
+
+footer .foot-div-three textarea{
+    width: 200%;
+}
+
+footer .foot-div-three foot-form-button{
+    background: blue;
+    color: #fff;
+    width: 200%;
+    border: 1px solid white;
+}
+
+footer .foot-div{
+    
+}
+/* contact style ends */
+
+/* service style starts */
+
+header h2{
+    font-family: monospace;
+    font-weight: bold;
+    font-size: 48px;
+    margin-top: 10%;
+}
+
+header .service-header-button{
+    margin-left: 40%;
+    padding: 5px;
+    border: 1px solid brown;
+    border-radius: 10px;
+}
+
+header .service-header-button:hover{
+    background: brown;
+    color: #fff;
+}
+
+header .card-img{
+    min-height: 60vh;
+}
+/* service style ends */
+
+/* details style starts */
+.img-wrap{
+    width: 80%;
+}
+
+.img-wrap li{
+    list-style: none;
+    display: inline;
+
+}
+
+.img-wrap li:hover{
+    border: 1px solid red;
+}
+.details-color{
+    width: 50%;
+}
+.details-color li{
+    list-style: none;
+    display: inline;
+    height: 10vh;
+}
+.details-color li:hover{
+    border: 1px solid red;
+}
+
+.car-details li{
+    list-style: none;
+    cursor: pointer;
+}
+
+.car-details ul li .minus-quant, .car-details ul li .plus-quant{
+    border-radius: 50%;
+    background:rgb(219, 217, 217);
+    font-weight: bold;
+}
+/* detail style ends */
+
+/* signup style starts */
+.navbar-nav #signup{
+    margin-left: 50%;
+}
+
+#signup-ul{
+    width: 100%;
+}
+
+/* signup style ends */
